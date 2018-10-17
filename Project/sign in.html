@@ -1,0 +1,76 @@
+<html>
+<title>first sign in</title>
+<head>
+<div>
+<link rel="stylesheet" type="text/css" href="new.css">
+
+<script>
+function validform1()
+{
+var pass1=document.getElementById("password1").value;
+var pass2=document.getElementById("password2").value;
+if(pass1==pass2)
+{
+return true;
+}
+else
+{
+alert("password don't match");
+return false;
+}
+}
+</script>
+
+
+<center>
+<img src="https://myfoodwp.s3.amazonaws.com/uploads/2018/08/myfoodfreshmealdelivery.png" height="10%" width="20%"><br><br>
+<img src="http://my-food.pl/wp-content/uploads/2015/04/Bez-nazwy-331.jpg">
+<center>
+<h2>Sign In Here</h2></center>
+</div>
+<hr>
+</head>
+<body>
+<center><br>
+<form style="color:black;font-style:italic;"action ="file:///D:/computer/course%201/Project/submit.html" onsubmit="return validform1();";">
+<table>
+<tr>
+<td> First Name:- </td>
+<td><input type="text" name="firstname" id="firstName"  required></td>
+</tr>
+<tr>
+<td>Last Name:-</td>
+<td><input type="text" name="lastname"  required></td>
+</tr>
+<tr>
+<td>Age:-</td>
+<td><input type="number" name="integer" min="5" required></td>
+</tr>
+<tr>
+<td>Email Id:-</td>
+<td><input type="text" name="email" required></td>
+</tr>
+<tr>
+<td>Date of birth:-</td>
+<td><input type="date" name="birthday" required></td>
+</tr>
+<tr>
+<td>Phone NO.:-</td>
+<td><input type="text" name="phone" id="phone" ></td>
+
+</tr>
+<tr>
+<td>Password:-</td>
+<td><input type="password" id="password1" required></td>
+</tr>
+<tr>
+<td>Re-Type password:</td>
+<td><input type="password" id="password2" required></td>
+</tr>
+</table><br><br>
+<input type="radio" name="terms" value="terms" required>I agree the terms and conditions<br><br>
+<input type="submit" value="sumbit">
+</center>
+</form>
+</body>
+</html>

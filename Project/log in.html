@@ -1,0 +1,57 @@
+<html>
+<title>first log in</title>
+<head><div>
+<link rel="stylesheet" type="text/css" href="new.css">
+
+
+<script type="text/javascript">
+function validform()
+{
+var pass1=document.getElementById("password1").value;
+var pass2=document.getElementById("password2").value;
+if(pass1==pass2)
+{
+return true;
+}
+else
+{
+alert("password don't match");
+return false;
+}
+}
+</script>
+
+
+<center>
+<img src="https://myfoodwp.s3.amazonaws.com/uploads/2018/08/myfoodfreshmealdelivery.png" height="10%" width="20%"><br><br>
+<img src="http://my-food.pl/wp-content/uploads/2015/04/Bez-nazwy-331.jpg">
+<center>
+<h2>Log In Here</h2></center></div><hr>
+</head>
+<body>
+<form style="color:black;font-style:italic;"action ="file:///D:/computer/course%201/Project/after%20login.html" onsubmit="return validform();";">
+<center><br>
+<table>
+<tr>
+<th>Email Id:-</th>
+<th><input type="text" name="email" required></th>
+</tr>
+<tr>
+<th>Date of birth:-</th>
+<th><input type="date" name="birthday" required></th>
+</tr>
+<tr>
+<th>Password:-</th>
+<th><input type="password" id="password1" required></th>
+</tr>
+<tr>
+<th>Re-Type password:</th>
+<th><input type="password" id="password2" required></th>
+</tr>
+</table><br><br>
+<input type="radio" name="terms" value="terms" required>I agree the terms and conditions<br><br>
+<input type="submit" value="sumbit">
+</center>
+</form>
+</body>
+</html>
